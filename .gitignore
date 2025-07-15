@@ -14,7 +14,7 @@
 /coverage
 
 # next.js
-/.next/
+/next/
 /out/
 
 # production
@@ -39,20 +39,16 @@ yarn-error.log*
 next-env.d.ts
 
 # misc # env files (can opt-in for committing if needed)
-.DS_Store
 *.env.local
 *.env.*.local
 .env*
 .env.production.local
 
-# typescript
-*.tsbuildinfo
 
 # editor directories and files
 .vscode/*
 !.vscode/extensions.json
 .idea
 .toolstarget
-.next
 .swc
 .eslintcache
