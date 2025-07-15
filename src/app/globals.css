@@ -1,0 +1,11 @@
+
+@import "tailwindcss";
+
+/* The font-family for body will now be handled primarily by Tailwind's
+   default font-sans, which we'll configure to use Montserrat. */
+body {
+  /* Remove font-family here as it will be set by Tailwind's base styles via the className on <body> */
+  font-weight: 500; /* You can keep this here */
+  margin: 0;
+  box-sizing: border-box;
+}
