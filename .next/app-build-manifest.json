@@ -6,15 +6,15 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/(public)/page": [
+    "/(public)/sign-up/[[...sign-up]]/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(public)/page.js"
+      "static/chunks/app/(public)/sign-up/[[...sign-up]]/page.js"
     ],
-    "/(public)/sign-in/[[...sign-in]]/page": [
+    "/_not-found/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(public)/sign-in/[[...sign-in]]/page.js"
+      "static/chunks/app/_not-found/page.js"
     ]
   }
 }
