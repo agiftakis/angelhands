@@ -6,7 +6,7 @@ function ThemeProvider({ children }: { children: React.ReactNode }) {
     <ConfigProvider
       theme={{
         token: {
-          colorPrimary: "#16423c", // This will set the primary color for all Ant Design components to black
+          colorPrimary: "#26d5d2", // This will set the primary color for all Ant Design components to black
           // You can also adjust borderRadius, colorTextBase, etc.
           borderRadius:2,
           controlOutline:'none',
@@ -14,7 +14,7 @@ function ThemeProvider({ children }: { children: React.ReactNode }) {
         components: {
           Button: {
             controlHeight: 45,
-            defaultBorderColor:"#16423c",
+            defaultBorderColor:"#26d5d2",
             //paddingInline: 10,
             
           },
