@@ -173,6 +173,9 @@
   .m-3 {
     margin: calc(var(--spacing) * 3);
   }
+  .flex-col {
+    flex-direction: column;
+  }
   .bg-blue-500 {
     background-color: var(--color-blue-500);
   }
