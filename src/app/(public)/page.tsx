@@ -22,7 +22,7 @@ function Homepage() {
         </div>
 
         {/* Right section: Sign-in link */}
-        <Link href='/sign-in' className="text-[#000808]">Sign-in</Link>
+        <Link href='/sign-in' className="text-[#000808] text-sm underline">Sign-in</Link>
       </div>
     </div>
   );
