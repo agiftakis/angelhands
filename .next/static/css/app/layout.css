@@ -176,6 +176,9 @@
   .flex-col {
     flex-direction: column;
   }
+  .gap-5 {
+    gap: calc(var(--spacing) * 5);
+  }
   .bg-blue-500 {
     background-color: var(--color-blue-500);
   }
