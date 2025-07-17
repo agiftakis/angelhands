@@ -184,6 +184,9 @@
   .mt-24 {
     margin-top: calc(var(--spacing) * 24);
   }
+  .mb-5 {
+    margin-bottom: calc(var(--spacing) * 5);
+  }
   .flex {
     display: flex;
   }
@@ -223,6 +226,9 @@
   }
   .p-5 {
     padding: calc(var(--spacing) * 5);
+  }
+  .px-10 {
+    padding-inline: calc(var(--spacing) * 10);
   }
   .font-sans {
     font-family: var(--font-sans);

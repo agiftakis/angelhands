@@ -28,10 +28,29 @@ function Homepage() {
         </Link>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 mt-20">
-        <div>
-          <h5 className='text-3xl font-bold text-[#26d5d2]'>
+        <div className="px-10">
+          <h5 className="text-2xl font-bold text-[#26d5d2] mb-5">
             Welcome to Angel Hands HomeCare
           </h5>
+          <p className='text-sm font-thin'>
+            At Angel hands your well-being and peace of mind are our highest
+            priorities. We understand that inviting care into your home is a
+            significant decision, and we are here to ensure it's one you feel
+            confident about. At Angel Hands, we pride ourselves on a staff
+            comprised of individuals who are not just skilled professionals, but
+            also genuine souls filled with warmth and compassion. Each member of
+            our team undergoes a rigorous selection process, ensuring they meet
+            our exacting standards for expertise, empathy, and dedication. We
+            believe that exceptional care should be accessible to everyone,
+            which is why we are committed to being a dependable and affordable
+            solution. Be assured, Angel Hands is deeply committed to working
+            alongside you every step of the way, offering unwavering support and
+            understanding. Your comfort, dignity, and independence are paramount
+            to us. Let us extend our Angel Hands to you, providing the
+            dependable, compassionate care you deserve. We're more than just a
+            home care agency; we're a supportive extension of your family, ready
+            to assist with a helping hand.
+          </p>
         </div>
         <div></div>
       </div>
