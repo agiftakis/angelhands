@@ -29,11 +29,11 @@ function Homepage() {
         </Link>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 mt-20">
-        <div className="px-10 flex flex-col gap-7">
+        <div className="px-10 flex flex-col gap-7 justify-center">
           <h5 className="text-2xl font-bold text-[#26d5d2] mb-5">
             Welcome to Angel Hands HomeCare
           </h5>
-          <p className="text-sm font-thin">
+          <p className="text-sm font-medium">
             At Angel hands your well-being and peace of mind are our highest
             priorities. We understand that inviting care into your home is a
             significant decision, and we are here to ensure it's one you feel
@@ -63,7 +63,15 @@ function Homepage() {
             </Button>
           </div>
         </div>
-        <div></div>
+        <div className='flex justify-center'>
+          <Image
+            src="/images/homepage.png"
+            alt="Peachtree homepage Logo"
+            width={450}
+            height={450}
+            priority={true}
+          />
+        </div>
       </div>
     </div>
   );
