@@ -25,3 +25,7 @@ body {
     font-weight: bold !important;
     border-radius: 3px !important;
 }
+
+.cl-rootBox{
+   box-shadow:none !important;
+}
