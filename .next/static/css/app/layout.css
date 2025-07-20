@@ -223,6 +223,9 @@
   .bg-\[url\(\'\/images\/angelbak\.png\'\)\] {
     background-image: url('/images/angelbak.png');
   }
+  .bg-\[url\(\'\/images\/angelbak1\.png\'\)\] {
+    background-image: url('/images/angelbak1.png');
+  }
   .bg-cover {
     background-size: cover;
   }
