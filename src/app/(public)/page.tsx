@@ -37,12 +37,16 @@ function Homepage() {
             At Angel hands your well-being and peace of mind are our highest
             priorities. We understand that inviting care into your home is a
             significant decision, and we are here to ensure it's one you feel
-            confident about. We pride ourselves on a staff
-            comprised of individuals who are not just skilled professionals, but
-            also genuine souls filled with warmth and compassion. Each member of
-            our team undergoes a rigorous selection process, ensuring they meet
-            our exacting standards for expertise, empathy, and dedication. We
-            believe that exceptional care should be accessible to everyone,
+            confident about. We pride ourselves on a staff comprised of
+            individuals who are not just skilled professionals, but also genuine
+            souls filled with warmth and compassion. Each member of our team
+            undergoes a rigorous selection process, ensuring they meet our
+            exacting standards for expertise, empathy, and dedication.
+          </p>
+          {/* Separate paragraph tag */}
+          <p className="text-sm font-medium mt-4">
+            {/* Added mt-4 for extra spacing if needed */}
+            We believe that exceptional care should be accessible to everyone,
             which is why we are committed to being a dependable and affordable
             solution. Be assured, Angel Hands is deeply committed to working
             alongside you every step of the way, offering unwavering support and
@@ -63,7 +67,7 @@ function Homepage() {
             </Button>
           </div>
         </div>
-        <div className='flex justify-center'>
+        <div className="flex justify-center">
           <Image
             src="/images/homepage.png"
             alt="Peachtree homepage Logo"
