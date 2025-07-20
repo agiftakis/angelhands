@@ -1,14 +1,20 @@
 
 @import "tailwindcss";
 
-/* The font-family for body will now be handled primarily by Tailwind's
-   default font-sans, which we'll configure to use Montserrat. */
-body {
-  /* Remove font-family here as it will be set by Tailwind's base styles via the className on <body> */
-  font-weight: 500; /* You can keep this here */
-  margin: 0;
-  box-sizing: border-box;
+/* Apply global background to html or body */
+html, body {
+  min-height: 100vh; /* Ensure they always take at least full viewport height */
+  margin: 0;         /* Remove any default browser margins */
+  padding: 0;        /* Remove any default browser padding */
+  box-sizing: border-box; /* Good practice for sizing */
 }
+
+body {
+  font-family: var(--font-montserrat);
+  font-weight: 500;
+  /* NO BACKGROUND IMAGE STYLES HERE */
+}
+
 
 .cl-formFieldInput{
    height: 45px !important;
