@@ -9,3 +9,19 @@ body {
   margin: 0;
   box-sizing: border-box;
 }
+
+.cl-formFieldInput{
+   height: 45px !important;
+   border-radius: 3px !important;
+   border: 1px solid #000c0cbf !important;
+   box-shadow: none !important;
+}
+
+.cl-formButtonPrimary{
+    height: 45px !important;
+    background-color: #087b79 !important;
+    color:floralwhite !important;
+    box-shadow: none !important;
+    font-weight: bold !important;
+    border-radius: 3px !important;
+}
