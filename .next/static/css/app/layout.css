@@ -315,6 +315,7 @@ body {
 }
 .cl-rootBox {
   box-shadow: none !important;
+  z-index: 4 !important;
 }
 @property --tw-font-weight {
   syntax: "*";
