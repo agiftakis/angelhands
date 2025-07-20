@@ -220,6 +220,21 @@
   .bg-\[\#26d5d2\] {
     background-color: #26d5d2;
   }
+  .bg-\[url\(\'\/images\/angelbak\.png\'\)\] {
+    background-image: url('/images/angelbak.png');
+  }
+  .bg-cover {
+    background-size: cover;
+  }
+  .bg-fixed {
+    background-attachment: fixed;
+  }
+  .bg-center {
+    background-position: center;
+  }
+  .bg-no-repeat {
+    background-repeat: no-repeat;
+  }
   .p-2 {
     padding: calc(var(--spacing) * 2);
   }
