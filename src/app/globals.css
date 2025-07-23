@@ -32,7 +32,8 @@ body {
     border-radius: 3px !important;
 }
 
-.cl-rootBox{
+.cl-cardBox{
    box-shadow:none !important;
    z-index: 4 !important;
+   border: 1px solid rgba(98, 88, 88, 0.109) !important
 }
