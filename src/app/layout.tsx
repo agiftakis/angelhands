@@ -5,7 +5,7 @@ import "./globals.css"; // Keep this import for Tailwind and other global styles
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google"; // Import Geist directly from next/font/google
 import { Montserrat } from "next/font/google"; // <-- NEW: Import Montserrat here!
-
+import connectMongoDB from "src/config/mongodb.ts";
 import ThemeProvider from "@/theme";
 import {
   ClerkProvider,
@@ -42,11 +42,12 @@ export const metadata: Metadata = {
   description: "NextJS",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+   await connectMongoDB();
   return (
     <ClerkProvider>
     <html lang="en">
