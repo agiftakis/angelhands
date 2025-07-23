@@ -5,9 +5,9 @@ import "./globals.css"; // Keep this import for Tailwind and other global styles
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google"; // Import Geist directly from next/font/google
 import { Montserrat } from "next/font/google"; // <-- NEW: Import Montserrat here!
-// src/app/layout.tsx
-import {connectMongoDB} from "../config/mongodb.ts";
+
 import ThemeProvider from "@/theme";
+import { connectMongoDB } from '../config/mongodb';
 import {
   ClerkProvider,
   SignInButton,
@@ -48,7 +48,7 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-   await connectMongoDB();
+   await connectMongoDB();//connect to your database
   return (
     <ClerkProvider>
     <html lang="en">
