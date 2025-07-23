@@ -5,7 +5,8 @@ import "./globals.css"; // Keep this import for Tailwind and other global styles
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google"; // Import Geist directly from next/font/google
 import { Montserrat } from "next/font/google"; // <-- NEW: Import Montserrat here!
-import connectMongoDB from "src/config/mongodb.ts";
+// src/app/layout.tsx
+import {connectMongoDB} from "../config/mongodb.ts";
 import ThemeProvider from "@/theme";
 import {
   ClerkProvider,
