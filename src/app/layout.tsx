@@ -17,6 +17,8 @@ import {
   UserButton,
 } from "@clerk/nextjs";
 
+import CustomLayout  from "@/custom-layouts";
+
 // Define Montserrat using next/font/google
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -61,7 +63,7 @@ export default async function RootLayout({
         >
           <ThemeProvider>
             <CustomLayout>
-              
+              {children}
             </CustomLayout>
           </ThemeProvider>
         </body>

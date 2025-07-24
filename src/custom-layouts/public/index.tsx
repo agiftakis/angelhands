@@ -1,6 +1,8 @@
 import React from 'react'
 
-function PublicLayout() {
+function PublicLayout({children}:{
+    children:React.ReactNode
+}) {
   return (
     <div>PublicLayout</div>
   )
