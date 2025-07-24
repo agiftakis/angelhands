@@ -18,7 +18,7 @@ export const createUser = async () => {
     await newUser.save();
     return {
       success: true,
-      message: "User Created Successfuly",
+      message: "User Created Successfully",
       data: JSON.parse(JSON.stringify(newUser)),
     };
   } catch (error: any) {
@@ -29,14 +29,29 @@ export const createUser = async () => {
   }
 };
 
-export const getUserDataFromMongoDB = async () =>{
-    try {
-        
-    } catch (error:any) {
-        return{
-            success:false,
-            message:error.message,
-        }
+export const getUserDataFromMongoDB = async () => {
+  try {
+    const user = await currentUser();
+    //check if user exists in MongoDB, if yes return user data
+    const userFromMongoDB = await UserModel.findOne({ clerkUserId: user?.id });
+    if (userFromMongoDB) {
+      return {
+        success: true,
+        data: JSON.parse(JSON.stringify(userFromMongoDB)),
+      };
     }
-
-}
+    //if user does not exist in MongoDB , create user and return user data
+    const newUser = await createUser();
+    if (newUser.success) {
+      return {
+        success: true,
+        data: newUser.data,
+      };
+    }
+  } catch (error: any) {
+    return {
+      success: false,
+      message: error.message,
+    };
+  }
+};
