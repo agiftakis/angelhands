@@ -7,7 +7,7 @@ import { Geist, Geist_Mono } from "next/font/google"; // Import Geist directly f
 import { Montserrat } from "next/font/google"; // <-- NEW: Import Montserrat here!
 
 import ThemeProvider from "@/theme";
-import { connectMongoDB } from '../config/mongodb';
+import { connectMongoDB } from "../config/mongodb";
 import {
   ClerkProvider,
   SignInButton,
@@ -15,7 +15,7 @@ import {
   SignedIn,
   SignedOut,
   UserButton,
-} from '@clerk/nextjs';
+} from "@clerk/nextjs";
 
 // Define Montserrat using next/font/google
 const montserrat = Montserrat({
@@ -48,20 +48,24 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-   await connectMongoDB();//connect to your database
+  await connectMongoDB(); //connect to your database
   return (
     <ClerkProvider>
-    <html lang="en">
-      {/* Apply ALL your desired font variables to the html or body element.
+      <html lang="en">
+        {/* Apply ALL your desired font variables to the html or body element.
           The order here matters for Tailwind defaults.
           We'll set Montserrat as the default 'sans' font in tailwind.config.js
           and put its class here. */}
-      <body
-        className={`${montserrat.className} ${geistSans.variable} antialiased ${geistMono.variable} antialiased`}
-      >
-        <ThemeProvider>{children}</ThemeProvider>
-      </body>
-    </html>
+        <body
+          className={`${montserrat.className} ${geistSans.variable} antialiased ${geistMono.variable} antialiased`}
+        >
+          <ThemeProvider>
+            <CustomLayout>
+              
+            </CustomLayout>
+          </ThemeProvider>
+        </body>
+      </html>
     </ClerkProvider>
   );
 }
