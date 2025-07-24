@@ -1,11 +1,7 @@
-import React from 'react'
+import React from "react";
 
-function PublicLayout({children}:{
-    children:React.ReactNode
-}) {
-  return (
-    <div>PublicLayout</div>
-  )
+function PublicLayout({ children }: { children: React.ReactNode }) {
+  return <div>PublicLayout</div>;
 }
 
-export default PublicLayout
+export default PublicLayout;
