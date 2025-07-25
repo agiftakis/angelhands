@@ -1,8 +1,38 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { message } from "antd";
 import Link from "next/link";
 import Image from "next/image";
+import { IUser } from "@/interfaces";
+import { getUserDataFromMongoDB } from "@/server-actions/users";
 
 function PrivateLayout({ children }: { children: React.ReactNode }) {
+  const [userData, setUserData] = React.useState<IUser | null>(null);
+  const [error, setError] = React.useState<string | null>(null);
+  const [loading, setLoading] = React.useState<boolean>(false);
+  //get User Data
+  const getUserData = async () => {
+    try {
+      setLoading(true);
+      const response: any = await getUserDataFromMongoDB();
+      //what to do after we receive user data
+      if (response?.success) {
+        setUserData(response.data);
+      } else {
+        message.error(response.message);
+        setError(response.message);
+      }
+    } catch (error: any) {
+      message.error(error.message);
+      setError(error.message);
+    } finally {
+      setLoading(false);
+    }
+  };
+  //update UserData- needs to run after component rendering
+  useEffect(() => {
+    getUserData();
+  }, []);
+
   return (
     <div>
       <div className="flex justify-between items-center py-5 px-10 bg-[#26d5d2f0]">
