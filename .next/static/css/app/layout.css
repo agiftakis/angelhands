@@ -217,14 +217,8 @@
   .gap-7 {
     gap: calc(var(--spacing) * 7);
   }
-  .bg-\[\#26d5d2\] {
-    background-color: #26d5d2;
-  }
   .bg-\[\#26d5d2f0\] {
     background-color: #26d5d2f0;
-  }
-  .bg-\[\#26d5d227\] {
-    background-color: #26d5d227;
   }
   .bg-\[url\(\'\/images\/angelbak\.png\'\)\] {
     background-image: url('/images/angelbak.png');
@@ -244,17 +238,11 @@
   .bg-no-repeat {
     background-repeat: no-repeat;
   }
-  .p-2 {
-    padding: calc(var(--spacing) * 2);
-  }
   .p-5 {
     padding: calc(var(--spacing) * 5);
   }
   .px-10 {
     padding-inline: calc(var(--spacing) * 10);
-  }
-  .py-2 {
-    padding-block: calc(var(--spacing) * 2);
   }
   .py-5 {
     padding-block: calc(var(--spacing) * 5);

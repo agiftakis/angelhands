@@ -7,7 +7,7 @@ export const createUser = async () => {
   try {
     const user = await currentUser();
     const mongoDBUserObj = {
-      name: `${user?.firstName} ${user?.lastName}`,
+      name: `${user?.username}`,
       clerkUserId: user?.id,
       email: user?.emailAddresses[0].emailAddress,
       profilePic: user?.imageUrl,
