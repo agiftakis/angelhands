@@ -3,13 +3,15 @@
 import UserModel from "@/models/user-model";
 import { currentUser } from "@clerk/nextjs/server";
 
+
 export const createUser = async () => {
   try {
     const user = await currentUser();
+    
     const mongoDBUserObj = {
       name: `${user?.username}`,
-      clerkUserId: user?.id,
       email: user?.emailAddresses[0].emailAddress,
+      clerkUserId: user?.id,
       profilePic: user?.imageUrl,
       isApproved: false,
       isSuperAdmin: false,
