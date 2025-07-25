@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { message } from "antd";
+import { Button, message } from "antd";
 import Link from "next/link";
 import Image from "next/image";
 import { IUser } from "@/interfaces";
@@ -53,9 +53,13 @@ function PrivateLayout({ children }: { children: React.ReactNode }) {
           </Link>
         </div>
         {/* Right section: UserName Display Tag and Hamburger menu*/}
-        <div className="flex gap-5">
-          <span className="text-white text-sm uppercase font-bold">{userData?.name}</span>
-          <Menu size={24} className="text-white" />
+        <div className="flex gap-5 items-center">
+          <span className="text-white text-sm uppercase font-bold">
+            {userData?.name}
+          </span>
+          <Button ghost size="small">
+            <Menu size={16} className="text-white font-bold" />
+          </Button>
         </div>
       </div>
 

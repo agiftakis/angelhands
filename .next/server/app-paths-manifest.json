@@ -1,6 +1,6 @@
 {
   "/(private)/admin/dashboard/page": "app/(private)/admin/dashboard/page.js",
   "/(public)/page": "app/(public)/page.js",
-  "/(public)/sign-in/[[...sign-in]]/page": "app/(public)/sign-in/[[...sign-in]]/page.js",
-  "/(public)/sign-up/[[...sign-up]]/page": "app/(public)/sign-up/[[...sign-up]]/page.js"
+  "/(public)/sign-up/[[...sign-up]]/page": "app/(public)/sign-up/[[...sign-up]]/page.js",
+  "/(public)/sign-in/[[...sign-in]]/page": "app/(public)/sign-in/[[...sign-in]]/page.js"
 }
