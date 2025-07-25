@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { IUser } from "@/interfaces";
 import { getUserDataFromMongoDB } from "@/server-actions/users";
+import { Menu } from "lucide-react";
 
 function PrivateLayout({ children }: { children: React.ReactNode }) {
   const [userData, setUserData] = React.useState<IUser | null>(null);
@@ -51,10 +52,11 @@ function PrivateLayout({ children }: { children: React.ReactNode }) {
             ANGEL HANDS
           </Link>
         </div>
-        {/* Right section: Sign-in link */}
-        <Link href="/sign-in" className="text-[#000808] text-sm underline">
-          Sign-in
-        </Link>
+        {/* Right section: UserName Display Tag and Hamburger menu*/}
+        <div className="flex gap-5">
+          <span className="text-white text-sm uppercase font-bold">{userData?.name}</span>
+          <Menu size={24} className="text-white" />
+        </div>
       </div>
 
       <div className="p-5">{children}</div>
